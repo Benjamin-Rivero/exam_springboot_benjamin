@@ -1,4 +1,4 @@
-package fr.benjamin.exam_springboot_benjamin.util;
+package fr.benjamin.exam_springboot_benjamin.utils;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;

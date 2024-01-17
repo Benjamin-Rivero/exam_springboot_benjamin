@@ -1,0 +1,1 @@
+import b from "src/main/webapp/js/lib/bootstrap/bootstrap";

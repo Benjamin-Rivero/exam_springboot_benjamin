@@ -1,4 +1,4 @@
-package fr.benjamin.exam_springboot_benjamin.util;
+package fr.benjamin.exam_springboot_benjamin.utils;
 
 import org.springframework.stereotype.Component;
 
