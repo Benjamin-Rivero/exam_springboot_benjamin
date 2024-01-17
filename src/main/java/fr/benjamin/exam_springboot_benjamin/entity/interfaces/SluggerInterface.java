@@ -1,4 +1,4 @@
-package fr.benjamin.exam_springboot_benjamin.entity;
+package fr.benjamin.exam_springboot_benjamin.entity.interfaces;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 

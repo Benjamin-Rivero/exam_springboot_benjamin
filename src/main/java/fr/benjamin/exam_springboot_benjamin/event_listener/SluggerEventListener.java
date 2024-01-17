@@ -1,7 +1,7 @@
 package fr.benjamin.exam_springboot_benjamin.event_listener;
 
-import fr.poec.springboot.instant_faking.entity.interfaces.SluggerInterface;
-import fr.poec.springboot.instant_faking.utils.Slugger;
+import fr.benjamin.exam_springboot_benjamin.entity.interfaces.SluggerInterface;
+import fr.benjamin.exam_springboot_benjamin.utils.Slugger;
 import lombok.AllArgsConstructor;
 import org.hibernate.event.spi.PreInsertEvent;
 import org.hibernate.event.spi.PreInsertEventListener;
