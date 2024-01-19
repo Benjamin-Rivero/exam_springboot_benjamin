@@ -1,6 +1,8 @@
 package fr.benjamin.exam_springboot_benjamin.entity;
 
+import com.fasterxml.jackson.annotation.JsonView;
 import fr.benjamin.exam_springboot_benjamin.entity.interfaces.SluggerInterface;
+import fr.benjamin.exam_springboot_benjamin.json_view.JsonViews;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -19,6 +21,7 @@ public class Model implements SluggerInterface {
     private Long id;
 
     @Column(nullable = false)
+    @JsonView(JsonViews.ModelView.class)
     private String name;
 
     private String slug;
