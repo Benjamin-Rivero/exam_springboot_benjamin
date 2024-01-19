@@ -75,4 +75,10 @@ public class ListingService {
     }
 
 
+    public Listing findBySlug(String slug) {
+        Listing listing = this.listingRepository.findBySlug(slug)
+                .orElseThrow(()-> new NotFoundEntityException("Listing","slug",slug));
+        listing.setPrice(listing.getPrice()/100);
+        return listing;
+    }
 }

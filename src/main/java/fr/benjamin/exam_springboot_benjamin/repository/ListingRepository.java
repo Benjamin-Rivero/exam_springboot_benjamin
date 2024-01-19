@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface ListingRepository extends JpaRepository<Listing, Long> {
+public interface ListingRepository extends JpaRepository<Listing, Long>,EntitySlugRepository<Listing> {
 
     List<Listing> findTop12ByOrderByCreatedAtDesc();
 

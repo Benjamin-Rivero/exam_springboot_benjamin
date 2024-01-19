@@ -18,12 +18,12 @@ public class ListingController {
 
     private final ListingService listingService;
 
-    @GetMapping(path = "/{id}", name = "show")
+    @GetMapping(path = "/{slug}", name = "show")
     public ModelAndView show(
-            @PathVariable Long id,
+            @PathVariable String slug,
             ModelAndView mav
     ) {
-        Listing listing = listingService.findById(id);
+        Listing listing = listingService.findBySlug(slug);
         mav.setViewName("listing/listing");
         mav.addObject("listing", listing);
         return mav;

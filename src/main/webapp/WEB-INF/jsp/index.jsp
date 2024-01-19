@@ -9,7 +9,7 @@
     <h2 class="my-5">Les dernières annonces</h2>
     <div class="row">
         <c:forEach items="${listings}" var="listing">
-                    <a class="col-3 mt-2 main-game-card" href="${s:mvcUrl('AppListing#show').arg(0, listing.id).build()}">
+                    <a class="col-3 mt-2 main-game-card" href="${s:mvcUrl('AppListing#show').arg(0, listing.slug).build()}">
                         <div class="game-card">
                             <div class="game-card-img">
                                 <img alt="${listing.title}" src="${listing.image}">
