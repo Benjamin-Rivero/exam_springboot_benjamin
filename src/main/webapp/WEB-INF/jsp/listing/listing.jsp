@@ -15,7 +15,7 @@
 
             <p class="fs-2">${listing.model.brand.name} ${listing.model.name}</p>
             <p class="fs-2">${listing.price}€</p>
-            <p>Kilometrage : ${listing.mileage}</p>
+            <p>Kilometrage : ${listing.mileage}  km</p>
             <p>Année de production : ${listing.producedYear}</p>
         </div>
     </div>
