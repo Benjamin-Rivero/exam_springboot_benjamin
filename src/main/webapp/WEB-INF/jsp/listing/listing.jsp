@@ -11,9 +11,12 @@
             </div>
         </div>
         <div class="col-6">
-            <h1>${listing.model.name}</h1>
+            <h4>${listing.title}</h4>
 
+            <p class="fs-2">${listing.model.brand.name} ${listing.model.name}</p>
             <p class="fs-2">${listing.price}€</p>
+            <p>Kilometrage : ${listing.mileage}</p>
+            <p>Année de production : ${listing.producedYear}</p>
         </div>
     </div>
 
